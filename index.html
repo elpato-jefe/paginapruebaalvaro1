@@ -1,0 +1,225 @@
+<!DOCTYPE HTML>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Inteligencia Artificial - IES Condesa Eylo</title>
+<link href="icono.ico" rel="icon">
+<link href="style.css" rel="stylesheet" type="text/css">
+<link href="animacion.css" rel="stylesheet" type="text/css">
+
+<!-- Processing para el reloj animado -->
+<script src="processing.js"></script>
+<script type="text/processing" data-processing-target="pjsCanvas">
+void setup(){
+  size(280,70);
+  background(#0F172A);
+  textSize(40);
+}
+void draw(){
+  background(#0F172A);
+  fill(#38BDF8);
+  int h= hour();
+  int m=minute();
+  int s=second();
+  text(h+":"+nf(m,2)+":"+nf(s,2),15,48);
+}
+</script>
+</head>
+
+<body>
+
+<header class="cabecera-principal">
+  <div id="info">IES Condesa-eylo</div>
+  <div id="aviso"><p>IA & TECNOLOGIA</p></div>
+  <canvas id="pjsCanvas"></canvas>
+  <div id="html"><img id="html-img" src="etiqueta.png" alt="Logo IA"></div>
+</header>
+
+<nav id="menuhorizontal">
+  <ul>
+    <li><a href="#seccion-ia">Que es la IA?</a></li>
+    <li><a href="#seccion-multimedia"> Multimedia</a></li>
+    <li><a href="#seccion-mapa">Ubicacion IA</a></li>
+  </ul>
+</nav>
+
+  <div style="clear: both;"><br></div>
+  <center><big><big><b>ENLACES DE INTERES Y NAVEGACION</b></big></big></center>
+  <br>
+
+  <center>
+    <div class="desplegable-enlaces">
+      <button class="boton-desplegable">Enlaces de Interes</button>
+      <div class="contenido-desplegable">
+        <a href="https://www.openai.com">Pulsa aqui para acceder a OpenAI(chatGPT)</a>
+        <a href="https://www.openai.com" target="_blank">Acceder a OpenAI en nueva ventana</a>
+        <a href="https://es.wikipedia.org/wiki/Inteligencia_artificial" target="_blank">Acceder a wikipedia de IA</a>
+        <a href="#puntodos"> Volver al enlace de inicio</a>
+      </div>
+    </div>
+  </center>
+
+
+
+<main id="seccion-ia" class="contenedor-principal">
+  
+  <h1 class="titulo-principal">Inteligencia Artificial y el Futuro Digital</h1>
+  
+  <div class="bloque-destacado">
+    <p><b>La Inteligencia Artificial es una rama de la informatica que busca crear sistemas y programas capaces de realizar tareas que requieren inteligencia humana, como aprender, reconocer patrones y tomar decisiones. A diferencia de un software tradicional que sigue reglas fijas, la IA aprende a partir de datos y experiencias previas</b></p>
+	
+    <p><i><br>Hiperautomatizacion y Asistentes Personales Avanzados: La IA estara integrada en casi todos los dispositivos, ayudandonos a gestionar tareas complejas, estudiar de forma personalizada y optimizar nuestro dia a dia.</br>
+	
+  Metaverso: La combinacion de la realidad virtual, la realidad aumentada y la computacion espacial cambiara la forma en que trabajamos y jugamos creando entornos digitales mas inmersivos.
+
+  Avances Cientificos y Medicos: La IA ya esta ayudando a disenar nuevos medicamentos y acelerar la investigacion en energias limpias y cambio climatico.</i></p>
+   
+  </div>
+
+  <p id="puntodos" class="nota-interna"></p>
+
+  <h2 class="subtitulo-seccion"><big><big>CLASIFICACION DE LA INTELIGENCIA ARTIFICIAL</big></big></h2>
+  
+  <p><b>Ramas principales de la IA:</b></p>
+  <ul class="lista-estilizada">
+    <li>Machine Learning: Es la rama que permite que los sistemas aprendan y mejoren a partir de la experiencia sin ser programados explicitamente. Utiliza algoritmos para analizar grandes cantidades de datos, encontrar patrones y hacer predicciones.</li>
+    <li>Deep Learning: Es una subdisciplina del machine learning inspirada en la estructura del cerebro humano. Utiliza redes neuronales artificiales para procesar datos complejos</li>
+    <li>Procesamiento del Lenguaje Natural: Se enfoca en la interaccion entre las computadoras y el lenguaje humano. Permite que las maquinas entiendan, interpreten, traduzcan y generen texto o voz.</li>
+	<li>Robotica: Combina la IA con ingenieroa mecanica para crear robots capaces de percibir su entorno, tomar decisiones y realizar tareas complejas en fabricas, exploracion espacial o medicina.</li>
+  </ul>
+
+  <p><b>Herramientas de IA mas utilizadas:</b></p>
+  <ul>
+    <li type="square">ChatGPT</li>
+    <li type="square">Gemini</li>
+    <li type="square">GitHub </li>
+	<li type="square">Copilot </li>
+	<li type="square">Suno(para crear canciones) </li>
+  </ul>
+
+  <p><b>Aplicaciones practicas:</b></p>
+  <ul>
+    <li type="circle">Vehiculos autonomos y navegacion(Conduccion asistida).</li>
+    <li type="circle">Diagnostico medico avanzado y ayudas a descubrimientos medicos.</li>
+    <li type="circle">Asistentes virtuales inteligentes, como los mencionados anteriormente.</li>
+  </ul>
+  
+   <p><b>Inconvenientes:</b></p>
+  <ul>
+    <li type="circle">Deppfakes: esto son falsificaciones de caras, voz y demas en videos.</li>
+    <li type="circle">Perdida de privacidad: Hay riesgo de robo de datos masivos, o de cuentas familiares.</li>
+  </ul>
+
+
+  <hr class="linea-separadora">
+
+  <h3 class="titulo-fases">Pasos para la Creacion de un Modelo de IA</h3>
+  <ol type="a" class="lista-ordenada">
+    <li>Recopilacion y limpieza de datos</li>
+    <li>Realizar entrenamiento del modelo con GPU</li>
+    <li>Hacer evaluacion y pruebas de rendimiento</li>
+    <li>Desplarlo en la nube</li>
+  </ol>
+
+  <ol type="I" class="lista-ordenada">
+    <li value="1">Fase inicial de investigacion</li>
+    <li>Desarrollo de algoritmos base</li>
+    <li>Optimizacion de parametros</li>
+    <li>Lanzamiento del product hecho</li>
+  </ol>
+
+  <ol type="I" class="lista-ordenada">
+    <li value="5">Fase de escalabilidad global</li>
+    <li>Monitoreo de seguridad</li>
+    <li>Actualizacion continua del sistema</li>
+  </ol>
+
+  <hr class="linea-separadora">
+  <h2 class="subtitulo-seccion">TABLAS INFORMATIVAS</h2>
+
+  <center>
+    <table class="tabla1">
+      <caption>Comparativa de Modelos de IA</caption>
+      <thead>
+        <tr>
+          <th>Modelo LLM</th>
+          <th>Parametros y Rendimiento</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>GPT-4</td>
+          <td>Alto rendimiento multisensorial</td>
+        </tr>
+        <tr>
+          <td>Claude 3</td>
+          <td>Alta precision en analisis de codigo</td>
+        </tr>
+      </tbody>
+    </table>	
+  </center>
+
+  <br>
+
+  <center>
+    <table class="tabla2" border="1">
+      <caption>Estructura de Datos en Redes Neuronales</caption>
+      <tr>
+        <td colspan="3" class="celda-destacada">Capa Oculta Multidimensional (Entrada y Procesamiento)</td>
+      </tr>
+      <tr>
+        <td rowspan="2" class="celda-lateral">Pesos Sinapticos</td>
+        <td>Neurona A</td>
+        <td>Neurona B</td>
+      </tr>
+      <tr>
+        <td>Neurona C</td>
+        <td>Neurona D</td>
+      </tr>
+    </table>
+  </center>
+
+  <p class="vamosaensayar"> </p>
+
+
+  <center><big><big><big><b><i><u>GALERIA DE IMAGENES SOBRE TECNOLOGIA<br></u></i></b></big></big></big></center>
+  <br>
+  
+  <center>
+    <img class="imagen-tarjeta" src="inteligencia_artificial.jpg" alt="IA" border="1" width="400">
+  </center>
+
+
+  <div id="seccion-multimedia" class="bloque-multimedia">
+    <h2 class="subtitulo-seccion"><big><big>REPRODUCTOR MULTIMEDIA</big></big></h2>
+    
+    <p><b>Canciones con IA:</b></p>
+    <audio src="youtube-audio.mp3" controls class="reproductor-audio"></audio><br><br>
+    <audio src="yutube-audio.mp3" controls class="reproductor-audio"></audio><br><br>
+   
+    <p><b>Video Explicativo sobre IA:</b></p>
+    <video src="videogood.mp4" width="640" height="360" controls class="reproductor-video"></video>
+  </div>
+   
+   
+  <div id="seccion-mapa" class="bloque-mapa">
+    <h2 class="subtitulo-seccion"><big><big>UBICACION DEL CENTRO MUNDIAL DE IA</big></big></h2>
+    <p style="text-align: center;">Sede Principal de Investigacion en Inteligencia Artificial (OpenAI - San Francisco)</p>
+    <center>
+      <iframe class="mapa-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.602123568798!2d-122.3908868234571!3d37.77119297198595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808f7fd6722d4f29%3A0x892e6212e87a26f8!2s1455%203rd%20St%2C%20San%20Francisco%2C%20CA%2094158!5e0!3m2!1ses!2ses!4v1700000000000!5m2!1ses!2ses" 
+      width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+    </center>
+  </div>
+
+</main>
+
+<br><br>
+
+<footer>
+  <p><b>Sitio Web sobre Inteligencia Artificial</b></p>
+  <p>IES Condesa Eylo Creado por Alvaro</p>
+</footer>
+
+</body>
+</html>
